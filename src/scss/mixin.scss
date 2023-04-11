@@ -4,3 +4,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin flexColumn() {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

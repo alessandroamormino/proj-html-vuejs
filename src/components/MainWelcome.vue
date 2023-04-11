@@ -27,6 +27,7 @@ export default {
 }
 </script>
 <template>
+  <!-- Welcome section -->
   <div class="welcome">
     <div class="info">
       <h2>{{ this.title }}</h2>

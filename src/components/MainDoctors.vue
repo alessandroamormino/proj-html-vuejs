@@ -31,7 +31,7 @@ export default {
 <template>
   <!-- Doctor section -->
   <div class="doctors">
-    <!-- header -->
+    <!-- info -->
     <div class="info">
       <img src="/images/icon-5.png" alt="Doctors">
       <h2>Meet Our Doctors</h2>
@@ -39,6 +39,7 @@ export default {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est aliquam labore consequatur similique ipsam cum.
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
     </div>
+    <!-- card -->
     <div class="card-container">
       <DoctorsCard v-for="doctor in this.doctors" :doctorCard="doctor"></DoctorsCard>
     </div>
@@ -46,11 +47,10 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../scss/variables.scss' as *;
+@use '../scss/mixin.scss' as *;
 
 .doctors {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  @include flexColumn();
   // flex
 
   padding: 100px;
@@ -59,9 +59,7 @@ export default {
   background-color: $bg-Doctors;
 
   .info {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    @include flexColumn();
     // flex
 
     width: 600px;
@@ -84,9 +82,7 @@ export default {
   }
 
   .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     gap: 2em;
     // flex
     padding: 3em 0;

@@ -1,5 +1,6 @@
 <script>
 import MainDoctors from './MainDoctors.vue';
+import MainServices from './MainServices.vue';
 import MainWelcome from './MainWelcome.vue';
 
 export default {
@@ -7,14 +8,14 @@ export default {
   data() {
     return {};
   },
-  components: { MainWelcome, MainDoctors }
+  components: { MainWelcome, MainDoctors, MainServices }
 }
 </script>
 <template>
   <main>
-    <!-- Import sections create in components -->
     <MainWelcome></MainWelcome>
     <MainDoctors></MainDoctors>
+    <MainServices></MainServices>
   </main>
 </template>
 <style lang="scss" scoped></style>
