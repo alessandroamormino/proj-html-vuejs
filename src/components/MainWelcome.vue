@@ -79,14 +79,17 @@ export default {
   .card {
     width: calc(100% / 4 - 2em / 4 * 3);
 
+    &:hover {
+      cursor: pointer;
+
+      h4 {
+        color: $colorPrimary;
+      }
+    }
+
     h4 {
       font-weight: 400;
       text-transform: uppercase;
-
-      &:hover {
-        color: $colorPrimary;
-        cursor: pointer;
-      }
     }
 
     p {

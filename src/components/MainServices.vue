@@ -120,11 +120,12 @@ export default {
 
       &:hover {
         cursor: pointer;
+
+        #title {
+          color: $colorPrimary;
+        }
       }
 
-      &:hover #title {
-        color: $colorPrimary;
-      }
 
     }
   }
