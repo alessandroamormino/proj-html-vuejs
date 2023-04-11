@@ -10,6 +10,7 @@ export default {
 }
 </script>
 <template>
+  <!-- import data from component MainDoctor with props -->
   <div class="card">
     <div class="top">
       <img :src="doctorCard.img" :alt="doctorCard.name">
@@ -18,6 +19,7 @@ export default {
       <span id="name">{{ doctorCard.name }}</span>
       <span id="role">{{ doctorCard.role }}</span>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit vel illum sunt.</p>
+      <!-- Social Section -->
       <div class="socials">
         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>

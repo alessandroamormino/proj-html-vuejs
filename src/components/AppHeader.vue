@@ -37,7 +37,7 @@ header {
   color: white;
 
   .container-centered {
-    height: 100%;
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
 
