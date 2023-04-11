@@ -14,7 +14,7 @@ export default {
   <nav>
     <div class="nav-right">
       <div class="logo-container">
-        <img src="/images/medical_logo_1x_light.png" alt="medical_logo">
+        <a href="#"><img src="/images/medical_logo_1x_light.png" alt="medical_logo"></a>
       </div>
     </div>
     <div class="nav-left">
