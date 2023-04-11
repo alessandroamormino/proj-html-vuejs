@@ -10,4 +10,4 @@ export default {
 
 <template></template>
 
-<style></style>
+<style lang="scss"></style>
