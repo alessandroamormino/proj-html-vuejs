@@ -44,6 +44,8 @@ export default {
   </div>
 </template>
 <style lang="scss" scoped>
+@use '../scss/variables.scss' as *;
+
 .welcome {
   padding: 100px;
   text-align: center;
@@ -79,6 +81,11 @@ export default {
     h4 {
       font-weight: 400;
       text-transform: uppercase;
+
+      &:hover {
+        color: $colorPrimary;
+        cursor: pointer;
+      }
     }
 
     p {

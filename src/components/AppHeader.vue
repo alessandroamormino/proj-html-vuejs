@@ -14,6 +14,7 @@ export default {
 </script>
 <template>
   <header>
+    <!-- import Nav from separate component -->
     <HeaderNav></HeaderNav>
     <div class="container-centered">
       <div class="header-info">
