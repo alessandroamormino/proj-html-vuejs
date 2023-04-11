@@ -1,3 +1,5 @@
+@use './scss/variables.scss' as *;
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -7,7 +9,7 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424; */
 
-  font-synthesis: none;
+  // font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,8 +24,31 @@
 }
 
 // Assets
+body {
+  font-family: "Noto Sans JP";
+}
+
 .container-centered {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  padding: .8em 2em;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-primary {
+  background-color: $colorPrimary;
+
+  &:hover {
+    background-color: $colorPrimaryHover;
+  }
 }
