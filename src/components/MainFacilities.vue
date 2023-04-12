@@ -89,14 +89,32 @@ export default {
 
     &:nth-child(1) {
       background-color: $colorPrimary;
+
+      .btn-secondary:hover {
+        background-color: #fff;
+        color: $colorPrimary;
+
+      }
     }
 
     &:nth-child(2) {
       background-color: $colorSecondary;
+
+      .btn-secondary:hover {
+        background-color: #fff;
+        color: $colorSecondary;
+
+      }
     }
 
     &:nth-child(3) {
       background-color: $colorPrimaryHover;
+
+      .btn-secondary:hover {
+        background-color: #fff;
+        color: $colorPrimaryHover;
+
+      }
     }
 
 
