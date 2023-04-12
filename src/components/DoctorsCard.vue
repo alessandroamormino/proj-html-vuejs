@@ -71,5 +71,13 @@ export default {
       }
     }
   }
+
+  transition: all .4s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  }
 }
 </style>
