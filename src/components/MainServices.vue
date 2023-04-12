@@ -38,7 +38,7 @@ export default {
   <div class="services">
     <!-- info -->
     <div class="info">
-      <img src="/images/icon-6.png" alt="Doctors">
+      <img src="/images/icon-6.png" alt="Services">
       <h2>Out Health Services</h2>
       <div class="separator"></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est aliquam labore consequatur similique ipsam cum.
