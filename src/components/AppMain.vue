@@ -1,4 +1,5 @@
 <script>
+import MainAppointment from './MainAppointment.vue';
 import MainDoctors from './MainDoctors.vue';
 import MainFacilities from './MainFacilities.vue';
 import MainServices from './MainServices.vue';
@@ -9,7 +10,7 @@ export default {
   data() {
     return {};
   },
-  components: { MainWelcome, MainDoctors, MainServices, MainFacilities }
+  components: { MainWelcome, MainDoctors, MainServices, MainFacilities, MainAppointment }
 }
 </script>
 <template>
@@ -18,6 +19,7 @@ export default {
     <MainDoctors></MainDoctors>
     <MainServices></MainServices>
     <MainFacilities></MainFacilities>
+    <MainAppointment></MainAppointment>
   </main>
 </template>
 <style lang="scss" scoped></style>
