@@ -85,7 +85,7 @@ nav {
 
     .dropdown {
       position: absolute;
-      top: 2em;
+      top: 1.7em;
       left: 0;
       // position
 
