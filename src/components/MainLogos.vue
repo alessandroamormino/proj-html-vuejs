@@ -15,21 +15,54 @@ export default {
 </script>
 <template>
   <!-- Slider Logos section -->
-  <div class="logos">
-    <div class="slider container-centered">
-      <img v-for="logo in this.logos" :src="logo" alt="logo">
+  <div class="bg">
+    <div class="container-centered">
+      <div class="logos">
+        <div class="slider">
+          <img v-for="logo in this.logos" :src="logo" alt="logo">
+        </div>
+        <div class="slider">
+          <img v-for="logo in this.logos" :src="logo" alt="logo">
+        </div>
+        <div class="slider">
+          <img v-for="logo in this.logos" :src="logo" alt="logo">
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-.logos {
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.bg {
   background-image: url('/images/rgb-gradient-bar-for-logo-carrasel.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
-  .slider {
-    img {
-      height: 200px;
+  .logos {
+    overflow: hidden;
+    white-space: nowrap;
+
+    &:hover .slider {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+    .slider {
+      display: inline-block;
+      animation: 10s slide infinite linear;
+
+      img {
+        height: 200px;
+      }
     }
   }
 }
