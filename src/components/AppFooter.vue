@@ -157,6 +157,12 @@ footer {
         border: 1px solid #000;
         color: #000;
         font-size: 1.1em;
+
+        &:hover {
+          background-color: $colorPrimary;
+          color: #fff;
+          border: 1px solid #fff;
+        }
       }
     }
   }
