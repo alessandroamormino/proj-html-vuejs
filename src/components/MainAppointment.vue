@@ -30,7 +30,7 @@ export default {
   color: #fff;
   // background
   background-color: #fff;
-  background-image: url('/images/paralax-bg-tour-facilities.jpg');
+  background-image: url('/images/make-an-appointment.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
