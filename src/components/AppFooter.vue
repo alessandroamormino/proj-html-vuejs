@@ -48,8 +48,10 @@ export default {
         <div class="separator"></div>
         <ul>
           <li v-for="department in this.store.departmentsLinks">
-            <i class="fa-solid fa-circle-chevron-right"></i>
-            {{ department }}
+            <a href="#">
+              <i class="fa-solid fa-circle-chevron-right"></i>
+              <span>{{ department }}</span>
+            </a>
           </li>
         </ul>
         <button class="btn btn-secondary">View Our Departments</button>
@@ -138,13 +140,22 @@ footer {
 
       ul {
         li {
-          display: flex;
-          align-items: center;
-          gap: .5em;
+          a {
+            display: flex;
+            align-items: center;
+            gap: .5em;
+            // flex
+            color: #000;
+            text-decoration: none;
 
-          .fa-circle-chevron-right {
-            color: $colorPrimary;
-            font-size: 1.5em;
+            &:hover span {
+              text-decoration: underline;
+            }
+
+            .fa-circle-chevron-right {
+              color: $colorPrimary;
+              font-size: 1.5em;
+            }
           }
         }
       }
