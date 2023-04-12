@@ -11,6 +11,14 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  created() {
+    addBackToTop({
+      diameter: 64,
+      backgroundColor: '#3BAFBF',
+      textColor: '#fff',
+      scrollDuration: 500,
+    });
   }
 }
 </script>
