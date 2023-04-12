@@ -16,7 +16,7 @@ export default {
       <img :src="doctorCard.img" :alt="doctorCard.name">
     </div>
     <div class="bottom">
-      <span id="name">{{ doctorCard.name }}</span>
+      <span id="doctor-name">{{ doctorCard.name }}</span>
       <span id="role">{{ doctorCard.role }}</span>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit vel illum sunt.</p>
       <!-- Social Section -->
@@ -53,7 +53,7 @@ export default {
     padding: 2em;
     background-color: #fff;
 
-    #name {
+    #doctor-name {
       text-transform: uppercase;
     }
 

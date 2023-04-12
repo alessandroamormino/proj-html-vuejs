@@ -15,6 +15,19 @@ export default {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est aliquam labore consequatur similique ipsam cum.
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
     </div>
+    <!-- Form section -->
+    <div class="form">
+      <div class="row">
+        <input type="text" id="name" placeholder="Name*" required>
+        <input type="email" id="email" placeholder="Email*" required>
+      </div>
+      <div class="row">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <input type="text" placeholder="Appointment Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+      </div>
+      <textarea id="message" type="text" placeholder="How can we help?*" rows="4"></textarea>
+      <input type="submit" class="btn btn-primary" value="Make an appointment">
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -55,6 +68,43 @@ export default {
       width: 150px;
       height: 1px;
       background-color: #fff;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2em;
+    // flex
+
+    width: 600px;
+
+    .row {
+      @include flexCenter();
+      gap: 2em;
+      // flex
+    }
+
+    input,
+    textarea {
+      flex-grow: 1;
+      // flex
+      padding: 1em;
+
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+
+      font-size: .8em;
+    }
+
+    .btn-primary {
+      border: none;
+      background-color: $colorPrimary;
+
+      &:hover {
+        background-color: $colorPrimaryHover;
+      }
     }
   }
 }
