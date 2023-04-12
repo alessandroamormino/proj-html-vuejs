@@ -6,8 +6,13 @@ export default {
     return {
       store,
       isDropdownVisible: false,
+      newDepartmentsLinks: [],
     };
   },
+  created() {
+    this.newDepartmentsLinks = [...this.store.departmentsLinks];
+    this.newDepartmentsLinks.unshift('General Practice');
+  }
 }
 </script>
 <template>
@@ -28,7 +33,7 @@ export default {
           </a>
           <div v-show="this.isDropdownVisible" class="dropdown">
             <ul class="dropdown-links">
-              <li v-for="DepLink in this.store.departmentsLinks"><a href="#">{{ DepLink }}</a></li>
+              <li v-for="DepLink in this.newDepartmentsLinks"><a href="#">{{ DepLink }}</a></li>
             </ul>
           </div>
         </li>
