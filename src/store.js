@@ -1,7 +1,6 @@
 import { reactive } from 'vue';
 export const store = reactive({
-  DepartmentsLinks: [
-    'General Practice',
+  departmentsLinks: [
     'Cardiology',
     'Pediatrics',
     'Diabetes Care',
