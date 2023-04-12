@@ -56,7 +56,7 @@ export default {
   padding: 100px;
   line-height: 2em;
 
-  background-color: $bg-Doctors;
+  background-color: $light-grey;
 
   .info {
     @include flexColumn();
