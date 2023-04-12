@@ -16,7 +16,7 @@ export default {
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
     </div>
     <!-- Form section -->
-    <div class="form">
+    <form action="" class="form">
       <div class="row">
         <input type="text" id="name" placeholder="Name*" required>
         <input type="email" id="email" placeholder="Email*" required>
@@ -27,7 +27,7 @@ export default {
       </div>
       <textarea id="message" type="text" placeholder="How can we help?*" rows="4"></textarea>
       <input type="submit" class="btn btn-primary" value="Make an appointment">
-    </div>
+    </form>
   </div>
 </template>
 <style lang="scss" scoped>
