@@ -22,7 +22,7 @@ export default {
       <div class="separator"></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est aliquam labore consequatur similique ipsam cum.
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
-      <img src="/images/play-icon.png" alt="Play">
+      <img id="play" src="/images/play-icon.png" alt="Play">
     </div>
   </div>
   <div class="card-container">
@@ -73,6 +73,16 @@ export default {
       height: 1px;
       background-color: #fff;
     }
+
+    #play {
+      transition: transform .4s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+
   }
 }
 
