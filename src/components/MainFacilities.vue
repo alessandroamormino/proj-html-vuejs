@@ -24,13 +24,13 @@ export default {
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
       <img src="/images/play-icon.png" alt="Play">
     </div>
-    <div class="card-container">
-      <div v-for="facility in facilities" class="card">
-        <span id="facility-name">{{ facility }}</span>
-        <img src="/images/wave-divider.png" alt="Divider">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ratione iusto cumque molestias!.</p>
-        <button class="btn btn-secondary">Learn More</button>
-      </div>
+  </div>
+  <div class="card-container">
+    <div v-for="facility in facilities" class="card">
+      <span id="facility-name">{{ facility }}</span>
+      <img src="/images/wave-divider.png" alt="Divider">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ratione iusto cumque molestias!.</p>
+      <button class="btn btn-secondary">Learn More</button>
     </div>
   </div>
 </template>
@@ -42,9 +42,10 @@ export default {
   @include flexColumn();
   // flex
 
-  padding: 100px;
+  padding: 150px 0;
   line-height: 2em;
   color: #fff;
+  // background
   background-color: #fff;
   background-image: url('/images/paralax-bg-tour-facilities.jpg');
   background-repeat: no-repeat;
@@ -71,6 +72,34 @@ export default {
       height: 1px;
       background-color: #fff;
     }
+  }
+}
+
+.card-container {
+  @include flexCenter();
+  color: #fff;
+
+  .card {
+    @include flexColumn();
+    // flex
+    gap: .8em;
+
+    padding: 2.5em 1em;
+    text-align: center;
+
+    &:nth-child(1) {
+      background-color: $colorPrimary;
+    }
+
+    &:nth-child(2) {
+      background-color: $colorSecondary;
+    }
+
+    &:nth-child(3) {
+      background-color: $colorPrimaryHover;
+    }
+
+
   }
 }
 </style>
