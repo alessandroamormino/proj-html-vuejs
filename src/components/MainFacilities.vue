@@ -2,7 +2,13 @@
 export default {
   name: 'MainFacilities',
   data() {
-    return {}
+    return {
+      facilities: [
+        'Emergency Care',
+        'Expert Diagnostics',
+        'Superb Rehabilitation'
+      ],
+    }
   }
 }
 </script>
@@ -18,6 +24,14 @@ export default {
         Maiores velit sint autem, nulla consequuntur obcaecati eaque ea totam itaque quaerat mollitia ab!</p>
       <img src="/images/play-icon.png" alt="Play">
     </div>
+    <div class="card-container">
+      <div v-for="facility in facilities" class="card">
+        <span id="facility-name">{{ facility }}</span>
+        <img src="/images/wave-divider.png" alt="Divider">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ratione iusto cumque molestias!.</p>
+        <button class="btn btn-secondary">Learn More</button>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -30,9 +44,11 @@ export default {
 
   padding: 100px;
   line-height: 2em;
-
+  color: #fff;
   background-color: #fff;
   background-image: url('/images/paralax-bg-tour-facilities.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .info {
     @include flexColumn();
@@ -53,7 +69,7 @@ export default {
     .separator {
       width: 150px;
       height: 1px;
-      background-color: #80808080;
+      background-color: #fff;
     }
   }
 }
