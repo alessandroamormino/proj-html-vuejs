@@ -77,12 +77,16 @@ export default {
 }
 
 .card-container {
-  @include flexCenter();
+  display: flex;
+  align-items: center;
+  // flex
   color: #fff;
 
   .card {
     @include flexColumn();
+    flex-grow: 1;
     // flex
+
     gap: .8em;
 
     padding: 2.5em 1em;
