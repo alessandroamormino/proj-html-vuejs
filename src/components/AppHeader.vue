@@ -32,12 +32,14 @@ export default {
 
 header {
   background-image: url('/images/header-image-homepage.jpg');
+  background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   height: 850px;
   color: white;
 
   .container-centered {
-    height: calc(100% - 100px);
+    height: calc(100% - 200px);
     display: flex;
     align-items: center;
 
