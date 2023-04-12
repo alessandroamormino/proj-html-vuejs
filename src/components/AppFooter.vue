@@ -18,8 +18,8 @@ export default {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ducimus aspernatur eligendi nobis! Doloribus
         tempora fuga non, deleniti blanditiis accusantium perspiciatis eligendi recusandae earum ducimus quia porro. Unde,
         deleniti quasi.</p>
-      <hr>
-      <a href="#">Lean More About Us</a>
+      <div class="separator-long"></div>
+      <a id="about-us" href="#">Lean More About Us</a>
       <div class="social">
         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
@@ -45,10 +45,111 @@ export default {
       <h3>Medical Departments</h3>
       <div class="separator"></div>
       <ul>
-        <li v-for="department in this.store.departmentsLinks">{{ department }}</li>
+        <li v-for="department in this.store.departmentsLinks">
+          <i class="fa-solid fa-circle-chevron-right"></i>
+          {{ department }}
+        </li>
       </ul>
       <button class="btn btn-secondary">View Our Departments</button>
     </div>
   </footer>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../scss/variables.scss' as *;
+@use '../scss/mixin.scss' as *;
+
+footer {
+  display: flex;
+  gap: 2em;
+  // flex
+  padding: 4em;
+
+  .col {
+    flex: 1 1 0px;
+    // flex
+    font-size: .9em;
+    line-height: 2em;
+
+    p {
+      padding-top: .5em;
+      padding-bottom: 1.5em;
+    }
+
+    .separator-long {
+      width: 100%;
+      height: 2px;
+      background-color: $separator-footer;
+    }
+
+    #about-us {
+      color: $link-footer;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .social {
+      display: flex;
+      gap: .8em;
+      // flex
+      padding-top: 1.5em;
+
+      a {
+        font-size: 2.5em;
+      }
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $link-footer;
+    }
+
+    .separator {
+      width: 35px;
+      height: 2px;
+      background-color: $colorPrimary;
+
+      margin: 1.5em 0;
+    }
+
+    .location,
+    .phone {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .location .fa-solid,
+    .phone .fa-solid {
+      color: $colorPrimary;
+      font-size: 1em;
+    }
+
+    .location .fa-location-dot {
+      font-size: 1.3em;
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+
+        .fa-circle-chevron-right {
+          color: $colorPrimary;
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    .btn-secondary {
+      padding: .8em 2.5em;
+
+      margin-top: 2.5em;
+
+      border: 1px solid #000;
+      color: #000;
+      font-size: 1.1em;
+    }
+  }
+}
+</style>

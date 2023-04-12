@@ -69,18 +69,6 @@ export default {
       .fa-brands {
         font-size: 2em;
       }
-
-      .fa-square-facebook {
-        color: #36599C;
-      }
-
-      .fa-square-twitter {
-        color: #30AEF3;
-      }
-
-      .fa-square-instagram {
-        color: #2F739E;
-      }
     }
   }
 }
