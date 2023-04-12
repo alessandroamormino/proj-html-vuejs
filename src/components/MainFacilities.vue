@@ -53,6 +53,7 @@ export default {
 
   .info {
     @include flexColumn();
+    gap: 1em;
     // flex
 
     width: 600px;

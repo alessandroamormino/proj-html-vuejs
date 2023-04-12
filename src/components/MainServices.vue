@@ -100,6 +100,7 @@ export default {
 
     .card {
       @include flexColumn();
+      gap: 1em;
       // flex
       padding-bottom: 60px;
       text-align: center;
