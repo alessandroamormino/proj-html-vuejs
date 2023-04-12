@@ -165,6 +165,7 @@ footer {
     padding: 30px 50px;
     font-size: .7em;
     background-color: $light-grey;
+    color: grey
   }
 }
 </style>
