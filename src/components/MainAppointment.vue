@@ -8,7 +8,7 @@ export default {
 </script>
 <template>
   <!-- Appointment section -->
-  <div class="appointment">
+  <div id="appointment">
     <div class="info">
       <h2>Make an Appointment</h2>
       <div class="separator"></div>
@@ -34,7 +34,7 @@ export default {
 @use '../scss/variables.scss' as *;
 @use '../scss/mixin.scss' as *;
 
-.appointment {
+#appointment {
   @include flexColumn();
   // flex
 

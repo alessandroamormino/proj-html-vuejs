@@ -38,7 +38,7 @@ export default {
           </div>
         </li>
         <li><a href="#">Articles</a></li>
-        <li><button class="btn btn-primary">Make Appointments</button></li>
+        <li><a href="#appointment" class="btn btn-primary">Make Appointments</a></li>
       </ul>
     </div>
   </nav>
@@ -75,6 +75,15 @@ nav {
           &:hover {
             color: $colorPrimary;
           }
+
+          &.btn {
+            font-size: .9em;
+
+            &:hover {
+              color: #fff;
+
+            }
+          }
         }
 
         .active {
@@ -106,6 +115,7 @@ nav {
         }
       }
     }
+
   }
 }
 </style>
