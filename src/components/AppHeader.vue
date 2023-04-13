@@ -13,6 +13,7 @@ export default {
 }
 </script>
 <template>
+  <!-- Header -->
   <header>
     <!-- import Nav from separate component -->
     <HeaderNav></HeaderNav>

@@ -15,6 +15,7 @@ export default {
 }
 </script>
 <template>
+  <!-- Main -->
   <main>
     <MainWelcome></MainWelcome>
     <MainDoctors></MainDoctors>
